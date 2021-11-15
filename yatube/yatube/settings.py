@@ -30,8 +30,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
-
 INSTALLED_APPS = [
     'posts.apps.PostsConfig',  # Добавленная запись
     'django.contrib.admin',
