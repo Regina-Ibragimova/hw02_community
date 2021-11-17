@@ -18,8 +18,8 @@ def index(request):
 
 def group_posts(request, slug):
     group = get_object_or_404(Group, slug=slug)
-    posts = group.group_filter.all()[:10]
-    title = f'Записи сообщества {group}'
+    posts = group.posts.all()[:10]
+    title = f'Записи сообщества {group.title}'
     context = {
         'group': group,
         'posts': posts,
